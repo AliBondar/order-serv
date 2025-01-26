@@ -10,11 +10,9 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class OrderRequestDto implements Serializable {
+public class TransactionRequest implements Serializable {
 
-    String name;
+    OrderDto orderDto;
 
-    int quantity;
-
-    double price;
+    PaymentDto paymentDto;
 }

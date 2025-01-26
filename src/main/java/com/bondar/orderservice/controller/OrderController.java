@@ -1,6 +1,8 @@
 package com.bondar.orderservice.controller;
 
-import com.bondar.orderservice.dto.OrderRequestDto;
+import com.bondar.orderservice.dto.OrderDto;
+import com.bondar.orderservice.dto.TransactionRequest;
+import com.bondar.orderservice.dto.TransactionResponse;
 import com.bondar.orderservice.entity.Order;
 import com.bondar.orderservice.service.OrderService;
 import lombok.AccessLevel;
@@ -28,10 +30,10 @@ public class OrderController {
     }
 
     @PostMapping("/saveOrder")
-    public ResponseEntity<?> bookOrder(@RequestBody OrderRequestDto dto) {
-        Order persistedOrder = orderService.saveOrder(dto);
-        if (persistedOrder != null) {
-            return ResponseEntity.status(HttpStatus.CREATED).body(persistedOrder);
+    public ResponseEntity<?> bookOrder(@RequestBody TransactionRequest request) {
+        TransactionResponse response = orderService.saveOrder(request);
+        if (response != null) {
+            return ResponseEntity.status(HttpStatus.CREATED).body(response);
         }
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }

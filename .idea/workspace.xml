@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5946da34-fa22-4037-ba8e-ebea23bd39ad" name="Changes" comment="" />
+    <list default="true" id="5946da34-fa22-4037-ba8e-ebea23bd39ad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/dto/PaymentDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/dto/TransactionRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/dto/TransactionResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/util/AppConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/dto/OrderRequestDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/dto/OrderDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/bondar/orderservice/service/OrderServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,13 +63,16 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/bondar/GitHub Projects/order-service",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/bondar/GitHub Projects/payment-service/pom.xml",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "spring.configuration.checksum": "be899d1f7f4b1410455bc8ef6b0605f0",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -100,7 +117,8 @@
       <workItem from="1737529736842" duration="6021000" />
       <workItem from="1737544377764" duration="32000" />
       <workItem from="1737544427518" duration="11139000" />
-      <workItem from="1737782603560" duration="3350000" />
+      <workItem from="1737782603560" duration="12391000" />
+      <workItem from="1737877308577" duration="14194000" />
     </task>
     <task id="LOCAL-00001" summary="update yml file configurations">
       <created>1737551696071</created>
