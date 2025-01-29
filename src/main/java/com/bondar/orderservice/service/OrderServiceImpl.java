@@ -5,7 +5,6 @@ import com.bondar.orderservice.dto.TransactionRequest;
 import com.bondar.orderservice.dto.TransactionResponse;
 import com.bondar.orderservice.entity.Order;
 import com.bondar.orderservice.repository.OrderRepository;
-import com.bondar.orderservice.util.AppConfiguration;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +47,7 @@ public class OrderServiceImpl implements OrderService {
         order.setQuantity(request.getOrderDto().getQuantity());
         order.setPrice(request.getOrderDto().getPrice());
 
-        PaymentDto paymentResponse = restTemplate.postForObject(String.format(AppConfiguration.getPath(), AppConfiguration.getMethod()), request, PaymentDto.class);
+        PaymentDto paymentResponse = restTemplate.postForObject(String.format(path, method), request, PaymentDto.class);
         response = paymentResponse.getStatus().equals("success")?"payment processing successful and order placed":"failed to pay, order has been added to cart";
         orderRepository.save(order);
         return new TransactionResponse(order, paymentResponse.getTransactionId(), paymentResponse.getAmount(), response);
