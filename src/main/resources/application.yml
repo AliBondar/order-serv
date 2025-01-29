@@ -3,6 +3,7 @@ server:
 spring:
   application:
     name: order-service
+
   datasource:
     url: jdbc:h2:file:C:/Users/bondar/H2test/Orders_DB
     driver-class-name: org.h2.Driver
@@ -19,15 +20,14 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.H2Dialect
-#  cloud:
-#    zookeeper:
-#      connect-string: localhost:2128
-#      config:
-#        enabled: false
-#      discovery:
-#        enabled: true
-#  config:
-#    import: zookeeper
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
 payment-service:
   path: http://localhost:8080/api/payment
   method: /savePayment
