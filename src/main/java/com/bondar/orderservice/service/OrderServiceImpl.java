@@ -48,7 +48,10 @@ public class OrderServiceImpl implements OrderService {
         order.setPrice(request.getOrderDto().getPrice());
 
         PaymentDto paymentResponse = restTemplate.postForObject(String.format(path, method), request, PaymentDto.class);
+
+        assert paymentResponse != null;
         response = paymentResponse.getStatus().equals("success")?"payment processing successful and order placed":"failed to pay, order has been added to cart";
+
         orderRepository.save(order);
         return new TransactionResponse(order, paymentResponse.getTransactionId(), paymentResponse.getAmount(), response);
     }
